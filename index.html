@@ -61,6 +61,8 @@
       }
     }
 
+
+
     html[data-page-transition=SlideHorizontal]::view-transition-old(page-group) {
       animation: slide-horizontal-old .6s cubic-bezier(.83, 0, .17, 1) forwards;
       mix-blend-mode: normal
@@ -111,7 +113,9 @@
     body {
       --scrollbar-width: 0px;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 10px
+      font-size: 10px;
+      /* background-image: url('dab550_bad83c21e04041ae93abd94c58e26744_mv2.png') */
+      
     }
 
     body,
@@ -4320,7 +4324,8 @@
 
     .MW5IWV .dLPlxY {
       height: var(--fill-layer-image-height, 100%);
-      opacity: var(--fill-layer-image-opacity)
+      opacity: var(--fill-layer-image-opacity);
+      width:200vh
     }
 
     .MW5IWV .dLPlxY img {
@@ -6277,7 +6282,11 @@
     }
 
     #comp-m28o2bbb .comp-m28o2bbb-container {
-      box-sizing: border-box;
+      background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Білий прозорий колір */
+    url('dab550_bad83c21e04041ae93abd94c58e26744_mv2.png'); /* Ваше зображення */
+  background-size: cover;
+  background-position: center;      box-sizing: border-box;
       position: relative;
       padding-top: 0px;
       padding-right: 0px;
@@ -6292,6 +6301,7 @@
       grid-template-columns: minmax(0px, 1fr);
       --container-layout-type: grid-container-layout;
       --container-display: grid;
+
     }
 
     #comp-m28o2bbb .comp-m28o2bbb-container-pinned {
@@ -7334,13 +7344,15 @@
                           class="MW5IWV">
                           <div  data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
                           <div  id="bgMedia_comp-m28o2bbb" data-motion-part="BG_MEDIA comp-m28o2bbb" class="VgO9Yg">
-                            <wow-image style="width: 150vh;" id="img_comp-m28o2bbb" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage"
+                            <wow-image  id="img_comp-m28o2bbb" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage"
                               data-image-info="{&quot;containerId&quot;:&quot;comp-m28o2bbb&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:160,&quot;targetHeight&quot;:90,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:2160,&quot;height&quot;:1215,&quot;uri&quot;:&quot;dab550_bad83c21e04041ae93abd94c58e26744~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                               data-motion-part="BG_IMG comp-m28o2bbb" data-bg-effect-name=""
-                              data-has-ssr-src="true"><img src="dab550_bad83c21e04041ae93abd94c58e26744_mv2.png" alt=""
-                                style= "object-fit: cover; object-position: 50% 50%;"
+                              data-has-ssr-src="true">
+                              <!-- <img src="dab550_bad83c21e04041ae93abd94c58e26744_mv2.png" alt=""
+                                style=  " height: 100vh;object-fit: cover; object-position: 50% 50%;"
                                 class="bg"
-                                 data-ssr-src-done="true" fetchpriority="high"></wow-image></div>
+                                 data-ssr-src-done="true" fetchpriority="high"> -->
+                                </wow-image></div>
                         </div>
                         <div data-testid="responsive-container-content"
                           class="comp-m28o2bbb-container max-width-container"><!--$-->
